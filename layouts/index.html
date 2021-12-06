@@ -6,6 +6,10 @@
 </div>
 
 <div class="content">
+
+  <h1 id="sample-markdown">Sample Markdown</h1>
+<p>This is some basic, sample markdown.</p>
+
   {{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
     {{ .Render "summary"}}
   {{ end }}
